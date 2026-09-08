@@ -1,0 +1,10 @@
+{
+  "name": "ai-factory-tic-tac-toe",
+  "version": "0.1.0",
+  "description": "Tris classico nel browser, 1v1 locale o contro CPU",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
