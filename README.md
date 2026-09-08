@@ -29,6 +29,20 @@ npx serve .
 node --test
 ```
 
+## Stato del progetto
+
+- `src/game.js`: logica pura del tris (board, mosse, verifica vincitore),
+  senza DOM. Coperta da test in `test/game.test.js`.
+
+Esempio di output dei test:
+
+```
+$ node --test
+# tests 8
+# pass 8
+# fail 0
+```
+
 ## Screenshot
 
 _(da aggiungere quando l'interfaccia e' pronta)_
