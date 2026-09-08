@@ -31,6 +31,13 @@ function render() {
   });
 
   app.appendChild(grid);
+
+  const resetButton = document.createElement('button');
+  resetButton.className = 'reset';
+  resetButton.type = 'button';
+  resetButton.textContent = 'Nuova partita';
+  resetButton.addEventListener('click', handleReset);
+  app.appendChild(resetButton);
 }
 
 function statusText() {
@@ -52,6 +59,15 @@ function handleCellClick(index) {
   board = makeMove(board, index, currentPlayer);
   winner = checkWinner(board);
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+
+  render();
+}
+
+// Riporta board e turno allo stato iniziale.
+function handleReset() {
+  board = createBoard();
+  currentPlayer = 'X';
+  winner = null;
 
   render();
 }

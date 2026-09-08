@@ -34,7 +34,9 @@ node --test
 - `src/game.js`: logica pura del tris (board, mosse, verifica vincitore),
   senza DOM. Coperta da test in `test/game.test.js`.
 - `src/app.js`: rendering del tabellone 3x3 in `#app` e gestione dei click,
-  con alternanza automatica del turno tra X e O (1v1 locale).
+  con alternanza automatica del turno tra X e O (1v1 locale). Mostra
+  l'esito della partita (vittoria o pareggio), blocca le celle a partita
+  conclusa e offre un pulsante "Nuova partita" per ricominciare.
 
 Esempio di output dei test:
 
@@ -47,6 +49,7 @@ $ node --test
 
 ## Screenshot
 
-Partita 1v1 locale, vittoria di X sulla riga in alto:
+Partita 1v1 locale, vittoria di X sulla riga in alto e pulsante
+"Nuova partita" per ricominciare:
 
 ![Tabellone con partita vinta da X](assets/screenshot.png)
