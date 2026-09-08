@@ -1,15 +1,15 @@
-# ai-factory-tic-tac-toe
+# <NOME PROGETTO>
 
-Tris giocabile nel browser, 1v1 locale o contro CPU. Progetto di vetrina.
+<Una riga: cosa fa e per chi.>
 
 Questo file viene letto a ogni run dell'agente. Tienilo sotto le 40 righe.
 
 ## Stack
 
-- HTML, CSS, JavaScript vanilla (moduli ES nativi, nessun framework)
-- Nessun database o storage
-- Test: `node --test`
-- Avvio locale: apri `index.html` nel browser (o `npx serve .`)
+- <linguaggio / framework>
+- <database o storage, se c'e'>
+- Test: <comando>
+- Avvio locale: <comando>
 
 ## Regole
 
@@ -25,10 +25,9 @@ Questo file viene letto a ogni run dell'agente. Tienilo sotto le 40 righe.
 
 - Codice e identificatori in inglese, commenti in italiano.
 - Commit in forma imperativa, una riga.
-- Logica di gioco in `src/game.js`, CPU in `src/ai.js`, DOM/eventi in
-  `src/app.js`. Nessuna logica di gioco dentro `app.js`.
+- <convenzione specifica del progetto: struttura cartelle, naming, ecc.>
 
 ## Fatto quando
 
-Una PR e' pronta se: `node --test` passa, il README riflette le novita', e
+Una PR e' pronta se: i test passano, il README riflette le novita', e
 un'immagine o un output di esempio mostra il risultato.
