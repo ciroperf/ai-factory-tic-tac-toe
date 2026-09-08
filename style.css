@@ -1,1 +1,38 @@
 /* Stile del tabellone e dei controlli: da definire nei compiti di UI. */
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-family: sans-serif;
+}
+
+#app {
+  text-align: center;
+}
+
+.status {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  grid-template-rows: repeat(3, 5rem);
+  gap: 0.25rem;
+}
+
+.cell {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.cell:disabled {
+  cursor: default;
+}
