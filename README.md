@@ -46,6 +46,9 @@ node --test
 - `src/ai.js`: `getCpuMove(board)` sceglie casualmente una cella libera tra
   quelle disponibili, senza modificare la board ricevuta. Coperta da test
   in `test/ai.test.js`.
+- `style.css`: tabellone centrato con celle sempre quadrate e dimensioni
+  responsive (funziona anche a 375px di larghezza), font X/O leggibile e
+  messaggio di fine partita evidenziato.
 
 Esempio di output dei test:
 

@@ -21,7 +21,7 @@ function render() {
   }
 
   const status = document.createElement('p');
-  status.className = 'status';
+  status.className = winner !== null ? 'status status--over' : 'status';
   status.textContent = statusText();
   app.appendChild(status);
 
