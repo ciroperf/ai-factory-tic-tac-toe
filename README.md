@@ -37,13 +37,16 @@ node --test
   con alternanza automatica del turno tra X e O (1v1 locale). Mostra
   l'esito della partita (vittoria o pareggio), blocca le celle a partita
   conclusa e offre un pulsante "Nuova partita" per ricominciare.
+- `src/ai.js`: `getCpuMove(board)` sceglie casualmente una cella libera tra
+  quelle disponibili, senza modificare la board ricevuta. Coperta da test
+  in `test/ai.test.js`.
 
 Esempio di output dei test:
 
 ```
 $ node --test
-# tests 8
-# pass 8
+# tests 11
+# pass 11
 # fail 0
 ```
 
