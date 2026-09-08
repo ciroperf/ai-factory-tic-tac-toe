@@ -43,3 +43,15 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+
+.mode-selection {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.mode-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}

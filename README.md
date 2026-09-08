@@ -33,10 +33,16 @@ node --test
 
 - `src/game.js`: logica pura del tris (board, mosse, verifica vincitore),
   senza DOM. Coperta da test in `test/game.test.js`.
-- `src/app.js`: rendering del tabellone 3x3 in `#app` e gestione dei click,
-  con alternanza automatica del turno tra X e O (1v1 locale). Mostra
+- `src/app.js`: prima di iniziare mostra una scelta di modalita' ("1v1
+  locale" oppure "Contro CPU"). Gestisce il rendering del tabellone 3x3 in
+  `#app` e i click, con alternanza automatica del turno tra X e O. Mostra
   l'esito della partita (vittoria o pareggio), blocca le celle a partita
-  conclusa e offre un pulsante "Nuova partita" per ricominciare.
+  conclusa e offre un pulsante "Nuova partita" per ricominciare. In
+  modalita' CPU, dopo la mossa del giocatore umano (X) la CPU (O) gioca
+  automaticamente chiamando `getCpuMove`; il tabellone viene bloccato
+  mentre tocca alla CPU. "Nuova partita" azzera solo la board e mantiene
+  la modalita' scelta in precedenza: per cambiare modalita' si ricarica
+  la pagina.
 - `src/ai.js`: `getCpuMove(board)` sceglie casualmente una cella libera tra
   quelle disponibili, senza modificare la board ricevuta. Coperta da test
   in `test/ai.test.js`.
@@ -56,3 +62,8 @@ Partita 1v1 locale, vittoria di X sulla riga in alto e pulsante
 "Nuova partita" per ricominciare:
 
 ![Tabellone con partita vinta da X](assets/screenshot.png)
+
+Modalita' contro CPU: dopo la mossa di X in alto a sinistra, la CPU
+risponde automaticamente con O:
+
+![Tabellone in modalita' CPU con risposta automatica di O](assets/screenshot-cpu-mode.png)
