@@ -33,6 +33,8 @@ node --test
 
 - `src/game.js`: logica pura del tris (board, mosse, verifica vincitore),
   senza DOM. Coperta da test in `test/game.test.js`.
+- `src/app.js`: rendering del tabellone 3x3 in `#app` e gestione dei click,
+  con alternanza automatica del turno tra X e O (1v1 locale).
 
 Esempio di output dei test:
 
@@ -45,4 +47,6 @@ $ node --test
 
 ## Screenshot
 
-_(da aggiungere quando l'interfaccia e' pronta)_
+Partita 1v1 locale, vittoria di X sulla riga in alto:
+
+![Tabellone con partita vinta da X](assets/screenshot.png)
